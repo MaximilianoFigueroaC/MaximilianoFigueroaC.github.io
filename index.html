@@ -1,36 +1,43 @@
 <html>
+
 <head>
     <meta charset = “UTF-8”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lab 1 </title>
     <br>
-    <h1 style = "text-align: center;"> Maximiliano Figueroa Cárdenas </h1>
+    <h1 class = "name"> Maximiliano Figueroa Cárdenas </h1>
+    <link rel = "stylesheet" type ="text/css" href = "styles.css">
 </head>
+
+
+
 <body>
     <br>
     <h2> <b> Major </b> </h2>
-    <p> Ingenieria Civil en Obras Civiles </p>
+    <p class = "answer"> Ingenieria Civil en Obras Civiles </p>
     <br>
 
-    <h2> <b> Year of University </b> </h2>
-    <p> Cuarto año </p>
+    <h2> <b> Year of University Enrollment </b> </h2>
+    <p class = "answer"> 2021 </p>
     <br>
 
     <h2> <b> Link to my Github </b> </h2>
-    <a href=”https://github.com/MaximilianoFigueroaC/MaximilianoFigueroaC.github.io”> Link </a>
+    <a class = "answer" href="https://github.com/MaximilianoFigueroaC"> LINK </a>
     <br>
 
     <h2> <b> Personal summary </b> </h2>
     <ul>
-	    <li> Alumno de la Universidad de los Andes </li> 
-	    <li> 21 años </li>
-        <li> Me gusta mucho la escalada y el padel </li>
-        <li> Tengo unicamente 1 hermano menor </li>
-        <li> Tengo un perro llamado tinto </li>
+	    <li class = "answer"> Alumno de la Universidad de los Andes </li> 
+	    <li class = "answer"> 21 años </li>
+        <li class = "answer"> Me gusta mucho la escalada y el padel </li>
+        <li class = "answer"> Tengo unicamente 1 hermano menor </li>
+        <li class = "answer"> Tengo un perro llamado tinto </li>
     </ul>
     <br>
 
     <h2> <b> Possessed skills </b> </h2>
-    <table> 
-	    <tr>
+    <table id = table> 
+	    <tr style="background-color: rgb(102, 255, 153);">
 		    <td> Skill </td>
 		    <td> Level </td>
 	    </tr>
@@ -71,8 +78,29 @@
 		    <td> Native </td>
 	    </tr>
     </table>
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <td> Insert your ID: </td>
+            <td> <input type ="text" id ="RutInput"> </td>
+        </tr>
+        <tr>
+            <td colspan ="2"> <button onclick ="Rut()"> Submit </button> </td>
+        </tr>
+        <tr>
+            <td colspan ="2"> <span id ="ShowRut"> </span> </td>
+        </tr>
+    </table>
+
+    <script>
+        function Rut() {
+            var rut = document.getElementById("RutInput").value;
+            document.getElementById("ShowRut").innerText = "Your ID is: " + rut;
+        }
+    </script>
+  
 </body>
-
-
 
 </html>

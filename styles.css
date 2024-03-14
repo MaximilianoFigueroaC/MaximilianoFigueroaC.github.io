@@ -1,0 +1,29 @@
+table {
+    width: 20%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid rgb(59, 148, 102); 
+}
+
+th, td {
+    padding: 5px; 
+}
+
+table {
+    border-radius: 20px;
+}
+
+.name {
+    font-size: 250%;
+    font-family: monospace;
+    color: darkgreen;
+    text-align: center;
+}
+
+.answer {
+    font-family: cursive;
+    color: darkolivegreen;
+}
